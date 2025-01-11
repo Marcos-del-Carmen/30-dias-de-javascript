@@ -1,0 +1,30 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+.container {
+    background: #b1b1b1;
+    padding: 10px;
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: 180px 1fr;
+}
+
+.item {
+    padding: 10px;
+}
+
+.item:nth-child(1) {
+    background: rgb(235, 235, 235);
+    border-radius: 10px;
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+
+span {
+    color: rgb(174, 174, 1);
+}
+
+hr {
+    border-color: #333;
+}
