@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teclas</title>
+    <style>
+        #clave {
+            text-align: center;
+            width: 50%;
+            height: 10vh;
+            margin: 0px auto;
+            box-shadow: 10px 5px 5px #9999;
+            margin-bottom: 20px;
+        }
+
+        span {
+            color: rgb(50, 184, 9);
+        }
+
+        #codigo-clave {
+            display: none;
+            width: 15vh;
+            height: 15vh;
+            font-size: 4em;
+            margin: 0px auto;
+            color: rgb(50, 184, 9);
+            box-shadow: 10px 5px 5px #9999;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="clave">Preciona cualquier tecla</h1>
+    <div id="codigo-clave">
+
+    </div>
+
+    <script>
+        let clave = document.querySelector('#clave');
+        let codigoClave = document.querySelector('#codigo-clave');
+
+        document.body.addEventListener("keypress", (e) => {
+            clave.innerHTML = `Precionaste la tecla <span>${e.key}</span>`
+            codigoClave.style.display = 'block';
+            codigoClave.innerHTML = `${e.keyCode}`;
+        });
+
+        document.body.appendChild(clave);
+        document.body.appendChild(codigoClave);
+    </script>
+</body>
+</html>

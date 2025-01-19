@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Number generator</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <div class="cont-info">
+        <h1>NUMBER GENERATOR</h1>
+        <h2>30 Días de JavaScript: DOM tercer día</h2>
+        <p>Autor: Marcos Del Carmen</p>
+    </div>
+    <div class="cont-entradas">
+        <input type="text" id="numero" placeholder="Seleeciona un número"/>
+        <button id="btn">Precionar</button>
+        <p></p>
+    </div>
+
+    <script>
+        const boton = document.getElementById("btn");
+        let input = document.querySelector('#numero');
+        let p = document.querySelector('p');
+        let cont = document.createElement('div');
+        cont.className = 'cont-numbers';
+
+        function primo(numero) {
+            for (var i = 2; i < numero; i++) {
+                if (numero % i === 0) {
+                    return false;
+                }
+            }
+            return numero !== 1;
+        }
+        
+        boton.addEventListener("click", () => {
+            if (input.value >= 0) {
+                p.remove();
+                cont.innerHTML = '';
+                for (let i = 0; i <= input.value; i++) {
+                    let item = document.createElement('div');
+                    item.className = 'item';
+                    if(primo(i)){
+                        item.style.background = 'yellow';
+                        item.style.color='#333';
+                    } else if (i % 2 == 0) {
+                        item.style.background = "green"
+                    } else if (i % 2 != 0) {
+                        item.style.background = "red"
+                    }
+                    item.innerHTML = i;
+                    cont.appendChild(item);
+                }
+            } else {
+                p.style.color = 'white';
+                p.style.background = 'tomato';
+                p.style.borderRadius = '30px';
+                p.style.padding = '10px';
+                p.innerHTML = 'No se permite una cadena de texto';
+                document.body.appendChild(p);
+            }
+        });
+
+        document.body.appendChild(cont);
+    </script>
+</body>
+</html>
+

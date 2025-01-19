@@ -1,0 +1,44 @@
+body {
+    margin: 0px auto;
+    width: 80%;
+}
+
+.cont-info h1,
+.cont-info h2,
+.cont-info p { 
+    text-align: center;
+}
+
+.cont-entradas {
+    margin-bottom: 20px;
+}
+
+.cont-entradas input {
+    width: 75%;
+    height: 4vh;
+    padding: 10px;
+    border: 2px solid rgb(0, 160, 0);
+}
+
+.cont-entradas button {
+    width: 20%;
+    height: 7vh;
+    background: rgb(0, 160, 0);
+    color: #fff;
+    border: none;
+}
+
+.cont-numbers {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    justify-content: center;
+    align-items: center;
+    place-content: center;
+    gap: 10px;
+}
+
+.item {
+    font-size: 3em;
+    color: #fff;
+}
+
