@@ -42,7 +42,9 @@ btn_lenguages.addEventListener('click', function(){
     tabla.innerHTML = '';
     // texto.textContent='10 Most languages in the wold';
     // texto.textContent = '';
-    fetch(countriesAPI).then((response) => response.json()).then((data) => {
+    fetch(countriesAPI)
+    .then((response) => response.json())
+    .then((data) => {
         let languageCount = { };
         data.forEach((element, index) => {
 
