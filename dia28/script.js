@@ -101,9 +101,6 @@ btnAddPlayer.addEventListener('click', function() {
 
 function tablaPlayes() {
     table_players.innerHTML = '';
-    // cont_players.innerHTML = '';
-    // cont_players.innerHTML = '';
-    // cont_players.innerHTML = '';
     for (const [index, user] of users.entries()) {
         let fila = document.createElement('tr');
         let name = document.createElement('td');
@@ -122,7 +119,6 @@ function tablaPlayes() {
 
         btn_delete.addEventListener('click', function() {
             users.splice(index, 1);
-            // fila.remove();
             tablaPlayes();
         })
 
@@ -142,8 +138,6 @@ function tablaPlayes() {
         img.width = 20; // Ajusta el tamaño si es necesario
         img.height = 20;
         btn_delete.appendChild(img);
-        // btn_delete.innerHTML = 'D';
-        // btn_delete.src = 'img/icon-delete.png';
         btn_increment_score.innerHTML = '+5';
         btn_decrement_score.innerHTML = '-5';
         
