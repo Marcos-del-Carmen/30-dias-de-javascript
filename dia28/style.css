@@ -1,0 +1,68 @@
+body {
+    width: 90%;
+    margin: 0px auto;
+}
+
+h1 {
+    text-align: center;
+}
+.cont-inputs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cont-inputs input{
+    padding: 5px;
+    height: 40px;
+    margin: 5px;
+    border-radius: 3px;
+    border: none;
+    background: #eaeaea;
+}
+
+h1,
+.cont-inputs, 
+.cont-players {
+    margin-bottom: 40px;
+}
+#btnAddPlayer {
+    background: rgb(10, 199, 10);
+    color: #fff;
+}
+
+table {
+    width: 100%;
+    table-layout: fixed; /* Hace que todas las celdas tengan el mismo ancho */
+    border-collapse: collapse;
+}
+
+tr {
+    border-bottom: 1px solid #ababab;
+}
+table span {
+    font-size: .8em;
+    color: #515151;
+}
+table button {
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    border-radius: 50%;
+}
+/* 🦓 Intercalar colores en filas impares y pares */
+tr:nth-child(odd) {
+    background-color: #f9f9f9; /* Color para filas impares */
+}
+
+tr:nth-child(even) {
+    background-color: #f1f1f1; /* Color para filas pares */
+}
+
+#btn_increment_score {
+    background: rgb(18, 146, 178);
+    color: #fff;
+}
+#btn_decrement_score {
+    background: #ababab;
+    color: #fff;
+}
