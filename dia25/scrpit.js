@@ -6,8 +6,6 @@ let tabla = document.getElementById('table-result');
 
 btn_population.addEventListener('click', function(){
     tabla.innerHTML = '';
-    // texto.textContent='10 Most populated in the wold';
-    // texto.textContent = '';
     fetch(countriesAPI)
     .then((response) => response.json())
     .then((data) => {
@@ -40,8 +38,7 @@ btn_population.addEventListener('click', function(){
 
 btn_lenguages.addEventListener('click', function(){
     tabla.innerHTML = '';
-    // texto.textContent='10 Most languages in the wold';
-    // texto.textContent = '';
+
     fetch(countriesAPI)
     .then((response) => response.json())
     .then((data) => {

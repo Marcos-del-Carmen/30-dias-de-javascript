@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datos de los países del mundo</title>
+    <link rel="stylesheet" href="../general.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="cont-head">
+        <h1>World countries data</h1>
+        <h4>Actualmente, tenemos 250 países</h4>
+        <!-- <p>4 países cumplieron los criterios de búsqueda</p> ESTE TEXTO TIENE QUE SALIR AL MOMENTO DE BUSCAR CON EL INPUT-->
+    </div>
+    <div class="cont-searc">
+        <input type="text" id="input-search">
+        <div class="cont-buttons">
+            <button type="button" id="btn-name">NOMBRE</button>
+            <button type="button" id="btn-capital">CAPITAL</button>
+            <button type="button" id="btn-population">POBLACIÓN</button>
+            <!-- <button type="button" ></button> ESTE BOTON SOLO ME MANDA A LA TABLA -->
+        </div>
+        <div class="cont-result">
+        <!-- 
+            SE TIENEN QUE MOSTRAR LOS PAISES 
+            bandera
+            nombre
+            capital 
+            languajes
+            pobalcion
+          -->
+        </div>
+    </div>
+    <!-- SE TIENE QUE MOSTRAR LA TABLA DE ESTADISTICAS DE LOS PAISES QUE SE ESTAN FILTRANDO -->
+    <div class="cont-stacs">
+        <button id="btn-top-population">POPULATION</button>
+        <button id="btn-top-lenguajes">LENGUAJES</button>
+        <table id="table-stacs">
+
+        </table>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>Marcos Del Carmen</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

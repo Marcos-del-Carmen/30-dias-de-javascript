@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Regex </title>
+    <link rel="stylesheet" href="../botones.css">
+    <link rel="stylesheet" href="../general.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="cont-form">
+        <div class="cont-input">
+            <p class="title-input">First Name</p>
+            <input type="text" id="first_name">
+            <p class="alert-input alert_number">No se permiten números.</p>
+            <p class="alert-input alert_caracter">No se permiten caracteres especiales.</p>
+            <p class="alert-input alert_empy">No puede estar vacío.</p>
+        </div>
+        <div class="cont-input">
+            <p class="title-input">Last Name</p>
+            <input type="text" id="last_name">
+            <p class="alert-input alert_number">No se permiten números.</p>
+            <p class="alert-input alert_caracter">No se permiten caracteres especiales.</p>
+            <p class="alert-input alert_empy">No puede estar vacío.</p>
+        </div>
+        <div class="cont-input">
+            <p class="title-input">Email</p>
+            <input type="inpt" id="email">
+            <p class="alert-input alert_caracter">No se permiten caracteres especiales.</p>
+            <p class="alert-input alert_empy">No puede estar vacío.</p>
+            <p class="alert-input alert_domain">No es un correo permitido</p>
+        </div>
+        <div class="cont-input">
+            <p class="title-input">Password</p>
+            <input type="password" id="password" >
+            <!-- <button id="togglePassword">👁️</button> -->
+            <p class="alert-input alert_empy">No puede estar vacío.</p>
+            <p class="alert-input alert_required">Letra mayuscula y un numero</p>
+            <p class="alert-input alert_length">Contraseña igual o mayor a 6 caracteres</p>
+        </div>
+        <div class="cont-input">
+            <p class="title-input">Telephone</p>
+            <input type="text" id="telephone">
+            <p class="alert-input alert_length">El número debe ser 11 digititos</p>
+        </div>
+        <div class="cont-input">
+            <p class="title-input">Your Bio</p>
+            <textarea name="description" id="description"></textarea>
+            <p class="alert-input alert_length">El número debe ser 11 digititos</p>
+            <p class="alert-input alert_empy">No puede estar vacío.</p>
+        </div>
+        <div class="cont-button">
+            <button class="btn-success" id="btn-send">Enviar</button>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
